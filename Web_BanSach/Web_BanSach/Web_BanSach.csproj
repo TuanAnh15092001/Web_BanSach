@@ -104,7 +104,30 @@
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\Bootstrap\bootstrap.rtl.css" />
     <Content Include="Content\Bootstrap\bootstrap.rtl.min.css" />
+    <Content Include="Content\Css\Home.css" />
+    <Content Include="Content\Css\Login.css" />
+    <Content Include="Content\Css\Register.css" />
     <Content Include="Content\Css\Style.css" />
+    <Content Include="Content\Images\10-nghich-ly-cuoc-song-cc9c2d0c.jpeg" />
+    <Content Include="Content\Images\100-y-tuong-tiep-thi-tuyet-hay-ec0f4bc0.jpeg" />
+    <Content Include="Content\Images\7-thoi-quen-thanh-dat-7aaff311.jpeg" />
+    <Content Include="Content\Images\99-dieu-khong-dang-ban-tam-4c02b3ad.jpeg" />
+    <Content Include="Content\Images\ban-nang-d538d96b.jpeg" />
+    <Content Include="Content\Images\bi-quyet-de-dat-duoc-uoc-mo-a09dca74.jpeg" />
+    <Content Include="Content\Images\giai-phap-dot-pha-d18f1225.jpeg" />
+    <Content Include="Content\Images\hoa-hoc-12-ket-noi-tri-thuc-voi-cuoc-song-0c3ebe1c.jpg" />
+    <Content Include="Content\Images\lich-su-12-ket-noi-tri-thuc-voi-cuoc-song-db97bb47.jpg" />
+    <Content Include="Content\Images\ngu-van-12-tap-1-ket-noi-tri-thuc-voi-cuoc-song-89996070.jpg" />
+    <Content Include="Content\Images\ngu-van-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song-4fffb681.jpg" />
+    <Content Include="Content\Images\nguoi-gioi-khong-phai-la-nguoi-lam-tat-ca-7e40c603.jpeg" />
+    <Content Include="Content\Images\nhung-nguyen-tac-thanh-cong-38284534.jpeg" />
+    <Content Include="Content\Images\sach-tieng-viet-2-tap-1-2-canh-dieu-fffdf9a1.jpeg" />
+    <Content Include="Content\Images\sach-toan-2-tap-1-2-canh-dieu-10cc9b0e.jpeg" />
+    <Content Include="Content\Images\sinh-hoc-12-ket-noi-tri-thuc-voi-cuoc-song-fe7261f7.jpg" />
+    <Content Include="Content\Images\suc-manh-cua-hien-tai-e2d6eaec.jpeg" />
+    <Content Include="Content\Images\toan-12-tap-1-ket-noi-tri-thuc-voi-cuoc-song-ef7517b7.jpg" />
+    <Content Include="Content\Images\toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song-828505a6.jpg" />
+    <Content Include="Content\Images\vat-li-12-ket-noi-tri-thuc-voi-cuoc-song-235a7019.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -116,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AcountController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -148,6 +172,8 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Shared\_LayoutSach.cshtml" />
+    <Content Include="Views\Acount\Register.cshtml" />
+    <Content Include="Views\Acount\Login.cshtml" />
     <Content Include="Views\Sach\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -159,6 +185,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
