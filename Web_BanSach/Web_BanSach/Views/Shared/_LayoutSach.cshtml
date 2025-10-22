@@ -19,7 +19,7 @@
                 <div class="lg\:flex-1 flex items-center gap-1\.5 register-container" >
                     <a aria-current="page" href="/" class="router-link-active router-link-exact-active flex items-end gap-2 font-bold text-xl text-gray-900 dark:text-white" aria-label="Nuxt UI">
                         <h1 class="flex items-center gap-2 w-auto h-auto" title="Thư viện sách online miễn phí">
-                            <span class="text-base lg:text-lg font-bold">StoryBook</span>
+                            <span class="text-base lg:text-lg font-bold">Story<span style="color:#00ff21">Book</span></span>
                         </h1>
                     </a>
 
@@ -29,15 +29,15 @@
                     <li class="relative">
                         <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="#" as="button" type="button" exact="false" exactquery="false" exacthash="false">
                             <!--[-->
-                            Sách điện tử
+                            Trang chủ
                             <!--[-->
                         </a>
 
                     </li>
                     <li class="relative">
-                        <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="#" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                        <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
                             <!--[-->
-                            Sách nói
+                            Liên Hệ
                             <!--[-->
                         </a>
 
@@ -52,6 +52,19 @@
                 </div>
             </div>
         </header>
+
+                    @*Banner*@   
+        <div class="book-section welcome-banner">
+            <h1><span> <span style="color:#00ff21">Chào mừng</span> đến với thư viện thế giới sách Story<span style="color:#00ff21">Book</span> </span></h1>
+            <p style="font-size:16px; font-weight:lighter">Chúng tôi cung cấp cho các bạn các thể loại sách, chủ yếu là sách giáo khoa, sách văn học, kỹ năng sống, được tìm kiếm khắp các trang web</p>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm..." class="search-input" />
+                <button class="search-btn">Tìm kiếm</button>
+            </div>
+        </div>
+
+
         <div>
             @RenderBody()
         </div>
