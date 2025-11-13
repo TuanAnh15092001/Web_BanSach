@@ -6,6 +6,7 @@
     -moz-osx-font-smoothing: grayscale
 }
 
+
 .welcome-banner {
     height: 100vh;
     width: 800px; /* tràn hết chiều ngang màn hình */
@@ -60,6 +61,7 @@
     .search-btn:hover {
         background-color: #00a868;
     }
+
 
 
 
@@ -381,6 +383,18 @@ menu, ol, ul {
     justify-content: flex-end;
 }
 
+.srch-icon {
+    background-color: transparent;
+    border: none;
+    color: #0f172a;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+    .srch-icon:hover {
+        color: #ffffff;
+    }
 
 .btn-login {
     display: inline-flex;
@@ -502,9 +516,15 @@ menu, ol, ul {
 }*/
 
 .book-section {
-    padding-top:10px;
+    padding-top: 10px;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
 }
 
     .book-section h2 {

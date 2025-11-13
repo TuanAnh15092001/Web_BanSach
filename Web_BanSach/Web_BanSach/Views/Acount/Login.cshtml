@@ -1,39 +1,37 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutSach.cshtml";
+    @*<link href="~/Content/Css/Login.css" rel="stylesheet" />*@
 }
 
-<!DOCTYPE html>
+<div class="container">
+    <div class="login-container mt-4" style="width: 400px; margin: auto">
+        <div class="card shadow-lg p-3 " style="">
+            <h3 class="card-title text-center fw-bold text-primary mb-4">Đăng nhập</h3>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>đăng nhập</title>
-    <link href="~/Content/Bootstrap/bootstrap.css" rel="stylesheet" />
-    <script src="~/Scripts/bootstrap.js"></script>
-    <meta charset="utf-8" />
-    <link href="~/Content/Css/Login.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="login-container">
-        <h2>Story<span style="color:#00ff21">Book</span></h2>
-        <p>Bạn chưa có tài khoản? <a href="@Url.Action("Register","Acount")">Đăng ký</a></p>
+            @*Sử dụng Using HTML.BeginForm có 4 obj cần chuyền vào, và bỏ form đăng nhập chỉ lấy div *@
+            @using (Html.BeginForm("XuLyFormDN", "Acount", new { duongdan = ViewBag.Url }, FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="loginEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Mật khẩu</label>
+                    <input type="password" name="password" class="form-control" id="loginPassword" required>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" style="margin: 0;" class="btn btn-primary w-100 mb-3">ĐĂNG NHẬP</button>
+                    <p class="text-center">
+                        Chưa có tài khoản? <a href="LTW_register.html" class="text-decoration-none fw-bold">Đăng ký ngay</a>
+                    </p>
+                </div>
 
-        <form>
-            <div>
-                <label for="email">Email *</label>
-                <input type="email" id="email" placeholder="Nhập email của bạn" required>
-            </div>
+            }
 
-            <div>
-                <label for="password">Mật khẩu *</label>
-                <div class="forgot"><a href="#">Quên mật khẩu?</a></div>
-                <input type="password" id="password" placeholder="Nhập mật khẩu của bạn" required>
-            </div>
-
-
-            <button type="submit" class="login-btn">Đăng nhập</button>
-        </form>
+        </div>
     </div>
-</body>
-</html>
+</div>
+

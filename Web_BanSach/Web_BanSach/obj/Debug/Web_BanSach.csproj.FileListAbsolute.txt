@@ -70,3 +70,5 @@ C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\obj\Debug\Web_BanSach.cspr
 C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\obj\Debug\Web_BanS.6DD58597.Up2Date
 C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\obj\Debug\Web_BanSach.dll
 C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\obj\Debug\Web_BanSach.pdb
+C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\bin\EntityFramework.dll
+C:\Users\TuanAnh\source\repos\Web_BanSach\Web_BanSach\bin\EntityFramework.xml

@@ -43,7 +43,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -104,6 +110,7 @@
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\Bootstrap\bootstrap.rtl.css" />
     <Content Include="Content\Bootstrap\bootstrap.rtl.min.css" />
+    <Content Include="Content\Css\DanhMuc.css" />
     <Content Include="Content\Css\Home.css" />
     <Content Include="Content\Css\Login.css" />
     <Content Include="Content\Css\Register.css" />
@@ -129,6 +136,16 @@
     <Content Include="Content\Images\toan-12-tap-2-ket-noi-tri-thuc-voi-cuoc-song-828505a6.jpg" />
     <Content Include="Content\Images\vat-li-12-ket-noi-tri-thuc-voi-cuoc-song-235a7019.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="QL_Sach.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QL_Sach.Context.cs</LastGenOutput>
+      <DependentUpon>QL_Sach.edmx</DependentUpon>
+    </Content>
+    <Content Include="QL_Sach.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QL_Sach.edmx</DependentUpon>
+      <LastGenOutput>QL_Sach.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -139,13 +156,60 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BANGSACH.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIET_HOADON.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AcountController.cs" />
+    <Compile Include="Controllers\DanhMucController.cs" />
     <Compile Include="Controllers\LienHeController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HOADON.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHHANG.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAISACH.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sach.cs" />
+    <Compile Include="NHANVIEN.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHAXUATBAN.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_Sach.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_Sach.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QL_Sach.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QL_Sach.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_Sach.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TINHTRANG.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VAITRO.cs">
+      <DependentUpon>QL_Sach.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -173,10 +237,18 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Shared\_LayoutSach.cshtml" />
-    <Content Include="Views\Acount\Register.cshtml" />
-    <Content Include="Views\Acount\Login.cshtml" />
     <Content Include="Views\Sach\Index.cshtml" />
     <Content Include="Views\LienHe\Index.cshtml" />
+    <Content Include="Views\DanhMuc\_DanhMuc.cshtml" />
+    <Content Include="Views\TimKiem\TimkiemView.cshtml" />
+    <EntityDeploy Include="QL_Sach.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QL_Sach.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="QL_Sach.edmx.diagram">
+      <DependentUpon>QL_Sach.edmx</DependentUpon>
+    </Content>
+    <Content Include="Views\Acount\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -186,8 +258,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\DangNhap\" />
     <Folder Include="Views\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
