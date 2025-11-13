@@ -1,0 +1,37 @@
+﻿@model List<BANGSACH>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutSach.cshtml";
+}
+
+
+<section class="book-section">
+    <h2 style="color:aquamarine ">Sách mới cập nhật</h2>
+    <div class="book-grid">
+
+        @foreach (var item in Model)
+        {
+                <div class="book-card">
+                    <a href="@Url.Action("ChiTietSach", "Sach", new { masach = @item.MASACH })">
+
+                        <div class="book-info">
+                            <span class="book-tag">@item.LOAISACH.TENLOAI</span>
+                        </div>
+                        <img src="~/Content/HinhAnh/@item.ANHBIA">
+
+                        <div class="book-info">
+                            <div class="book-title">@item.TENSACH</div>
+                            <div class="book-price">@String.Format("{0:#,##0}", @item.GIABAN) VNĐ</div>
+                            <a class="book-author" href="#">@item.NHAXUATBAN.TENNXB</a>
+                        </div>
+                    </a>
+
+                </div>
+        }
+        <!-- Thêm các card khác tương tự -->
+    </div>
+</section>
+
+
+
