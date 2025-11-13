@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\web_bansach\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\controllers\\sachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\web_bansach\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 323,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\Sach\\Index.cshtml",
               "RelativeDocumentMoniker": "Web_BanSach\\Views\\Sach\\Index.cshtml",
@@ -60,12 +60,11 @@
               "RelativeToolTip": "Web_BanSach\\Models\\Sach.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T10:15:14.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T10:15:14.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SachController.cs",
               "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Controllers\\SachController.cs",
               "RelativeDocumentMoniker": "Web_BanSach\\Controllers\\SachController.cs",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "Web_BanSach\\Content\\Css\\Style.css",
               "ViewState": "AgIAAPYBAAAAAAAAAAAvwA4CAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-06T05:42:11.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T05:42:11.28Z"
             }
           ]
         }
