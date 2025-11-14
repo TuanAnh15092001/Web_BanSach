@@ -7,32 +7,20 @@
       "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\controllers\\sacheditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\sachedit\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\sachedit\\themsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\themsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\sachedit\\viewedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\web_bansach\\views\\sachedit\\viewedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\viewedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\loaisach\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\loaisach\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\web_bansach\\views\\sachedit\\themsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\themsach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\views\\sachedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\controllers\\loaisachcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|c:\\users\\tuananh\\source\\repos\\web_bansach\\web_bansach\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\web_bansach\\views\\sachedit\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2780D7E7-F34A-49E2-A18B-469EAA852A98}|Web_BanSach\\Web_BanSach.csproj|solutionrelative:web_bansach\\views\\sachedit\\viewdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 385,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +42,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\Index.cshtml",
+              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\Index.cshtml",
+              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T10:53:05.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ThemSach.cshtml",
               "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ThemSach.cshtml",
               "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\ThemSach.cshtml",
               "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ThemSach.cshtml",
               "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\ThemSach.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-14T10:15:36.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewEdit.cshtml",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
-              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
-              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T10:15:25.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewDelete.cshtml",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
-              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
-              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:34:45.652Z",
               "EditorCaption": ""
             },
             {
@@ -99,67 +74,35 @@
               "RelativeDocumentMoniker": "Web_BanSach\\Controllers\\SachEditController.cs",
               "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Controllers\\SachEditController.cs",
               "RelativeToolTip": "Web_BanSach\\Controllers\\SachEditController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAmwHMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T06:28:06.766Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 261,
-          "SelectedChildIndex": 1,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\Index.cshtml",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\Index.cshtml",
-              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADgAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ViewEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
+              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
+              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
+              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\ViewEdit.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T09:50:59.044Z",
+              "WhenOpened": "2025-11-14T10:15:25.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ViewDelete.cshtml",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\LOAISACH\\ViewDelete.cshtml",
-              "RelativeDocumentMoniker": "Web_BanSach\\Views\\LOAISACH\\ViewDelete.cshtml",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\LOAISACH\\ViewDelete.cshtml",
-              "RelativeToolTip": "Web_BanSach\\Views\\LOAISACH\\ViewDelete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
+              "RelativeDocumentMoniker": "Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
+              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
+              "RelativeToolTip": "Web_BanSach\\Views\\SachEdit\\ViewDelete.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T06:11:43.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoaiSachController.cs",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Controllers\\LoaiSachController.cs",
-              "RelativeDocumentMoniker": "Web_BanSach\\Controllers\\LoaiSachController.cs",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Controllers\\LoaiSachController.cs",
-              "RelativeToolTip": "Web_BanSach\\Controllers\\LoaiSachController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAcwEMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T04:38:10.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Sach.cs",
-              "DocumentMoniker": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Models\\Sach.cs",
-              "RelativeDocumentMoniker": "Web_BanSach\\Models\\Sach.cs",
-              "ToolTip": "C:\\Users\\TuanAnh\\source\\repos\\Web_BanSach\\Web_BanSach\\Models\\Sach.cs",
-              "RelativeToolTip": "Web_BanSach\\Models\\Sach.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T08:37:57.02Z",
+              "WhenOpened": "2025-11-14T09:34:45.652Z",
               "EditorCaption": ""
             }
           ]

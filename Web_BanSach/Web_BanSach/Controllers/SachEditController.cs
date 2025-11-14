@@ -29,19 +29,19 @@ namespace Web_BanSach.Controllers
         }
 
         [HttpPost]
-        public ActionResult XuLySach(Saches s, HttpPostedFileBase AnhBia)
+        public ActionResult XuLySach(Saches s, HttpPostedFileBase AnhBiaUpload)
         {
             BANGSACH sachess = new BANGSACH();
             if (ModelState.IsValid)
             {
                 // thêm ảnh
-                if (AnhBia != null && AnhBia.ContentLength > 0)
+                if (AnhBiaUpload != null && AnhBiaUpload.ContentLength > 0)
                 {
-                    var filename = Path.GetFileName(AnhBia.FileName);
+                    var filename = Path.GetFileName(AnhBiaUpload.FileName);
                     var path = Path.Combine(Server.MapPath("~/Content/HinhAnh"), filename);
                     if (!System.IO.File.Exists(path))
                     {
-                        AnhBia.SaveAs(path);
+                        AnhBiaUpload.SaveAs(path);
                         sachess.ANHBIA = filename;
                     }
                 }
@@ -84,49 +84,48 @@ namespace Web_BanSach.Controllers
         }
 
         //GET: Sách/sửa loại sách
-        //public ActionResult ViewEdit(int id)
-        //{
-        //    ViewBag.SelectLoai = new SelectList(sach.LOAISACHes, "MALOAI", "TENLOAI");
-        //    ViewBag.SelectNXB = new SelectList(sach.NHAXUATBANs, "MANXB", "TENNXB");
-        //    var saches = sach.BANGSACHes.Find(id);
-        //    return View(saches);
-        //}
+        public ActionResult ViewEdit(int id)
+        {
+            ViewBag.SelectLoai = new SelectList(sach.LOAISACHes, "MALOAI", "TENLOAI");
+            ViewBag.SelectNXB = new SelectList(sach.NHAXUATBANs, "MANXB", "TENNXB");
+            var saches = sach.BANGSACHes.Find(id);
+            return View(saches);
+        }
 
+        [HttpPost]
+        public ActionResult SuaSach(BANGSACH s, HttpPostedFileBase AnhBiaUpload)
+        {
+            if (ModelState.IsValid)
+            {
+                var sachess = sach.BANGSACHes.Find(s.MASACH);
+                // thêm ảnh
+                if (AnhBiaUpload != null && AnhBiaUpload.ContentLength > 0)
+                {
 
-        //[HttpPost]
-        //public ActionResult SuaSach(BANGSACH s, HttpPostedFileBase AnhBia)
-        //{
-        //    BANGSACH sachess = new BANGSACH();
-        //    if (ModelState.IsValid)
-        //    {
-        //        // thêm ảnh
-        //        if (AnhBia != null && AnhBia.ContentLength > 0)
-        //        {
+                    var filename = Path.GetFileName(AnhBiaUpload.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Content/HinhAnh"), filename);
+                    if (!System.IO.File.Exists(path))
+                    {
+                        AnhBiaUpload.SaveAs(path);
+                        sachess.ANHBIA = filename;
+                    }
+                }
 
-        //            var filename = Path.GetFileName(AnhBia.FileName);
-        //            var path = Path.Combine(Server.MapPath("~/Content/HinhAnh"), filename);
-        //            if (!System.IO.File.Exists(path))
-        //            {
-        //                AnhBia.SaveAs(path);
-        //                sachess.ANHBIA = filename;
-        //            }
-        //        }
-
-        //        //thêm thông tin khác
-        //        sachess.TENSACH = s.TENSACH;
-        //        sachess.GIABAN = s.GIABAN;
-        //        sachess.NOIDUNG = s.NOIDUNG;
-        //        sachess.NAMXUATBAN = s.NAMXUATBAN;
-        //        sachess.MALOAI = s.MALOAI;
-        //        sachess.MANXB = s.MANXB;
-        //        UpdateModel(sachess);
-        //        sach.SaveChanges();
-        //        return RedirectToAction("Index", "SachEdit");
-        //    }
-        //    ViewBag.SelectLoai = new SelectList(sach.LOAISACHes, "MALOAI", "TENLOAI", s.MALOAI);
-        //    ViewBag.SelectNXB = new SelectList(sach.NHAXUATBANs, "MANXB", "TENNXB", s.MANXB);
-        //    return View("Index");
-        //}
+                //thêm thông tin khác
+                sachess.TENSACH = s.TENSACH;
+                sachess.GIABAN = s.GIABAN;
+                sachess.NOIDUNG = s.NOIDUNG;
+                sachess.NAMXUATBAN = s.NAMXUATBAN;
+                sachess.MALOAI = s.MALOAI;
+                sachess.MANXB = s.MANXB;
+                UpdateModel(sachess);
+                sach.SaveChanges();
+                return RedirectToAction("Index", "SachEdit");
+            }
+            ViewBag.SelectLoai = new SelectList(sach.LOAISACHes, "MALOAI", "TENLOAI", s.MALOAI);
+            ViewBag.SelectNXB = new SelectList(sach.NHAXUATBANs, "MANXB", "TENNXB", s.MANXB);
+            return View("Index");
+        }
 
 
 
