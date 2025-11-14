@@ -186,7 +186,10 @@
     <Compile Include="Controllers\AcountController.cs" />
     <Compile Include="Controllers\DanhMucController.cs" />
     <Compile Include="Controllers\LienHeController.cs" />
+    <Compile Include="Controllers\LoaiSachController.cs" />
+    <Compile Include="Controllers\NhaXuatBanController.cs" />
     <Compile Include="Controllers\SachController.cs" />
+    <Compile Include="Controllers\SachEditController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -274,6 +277,18 @@
     <Content Include="Views\DanhMuc\_DanhMucTL.cshtml" />
     <Content Include="Views\DanhMuc\_DanhMucNXB.cshtml" />
     <Content Include="Views\DanhMuc\_DanhMucTimKiem.cshtml" />
+    <Content Include="Views\LOAISACH\Index.cshtml" />
+    <Content Include="Views\LOAISACH\ThemLoai.cshtml" />
+    <Content Include="Views\LOAISACH\ViewDelete.cshtml" />
+    <Content Include="Views\LOAISACH\ViewEdit.cshtml" />
+    <Content Include="Views\NhaXuatBan\Index.cshtml" />
+    <Content Include="Views\NhaXuatBan\ThemNXB.cshtml" />
+    <Content Include="Views\NhaXuatBan\ViewDelete.cshtml" />
+    <Content Include="Views\NhaXuatBan\ViewEdit.cshtml" />
+    <Content Include="Views\SachEdit\Index.cshtml" />
+    <Content Include="Views\SachEdit\ThemSach.cshtml" />
+    <Content Include="Views\SachEdit\ViewDelete.cshtml" />
+    <Content Include="Views\SachEdit\ViewEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -283,6 +298,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ChinhSua\" />
     <Folder Include="Views\DangNhap\" />
     <Folder Include="Views\Login\" />
   </ItemGroup>

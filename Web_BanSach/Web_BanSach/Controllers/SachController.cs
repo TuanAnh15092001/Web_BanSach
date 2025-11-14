@@ -13,11 +13,9 @@ namespace Web_BanSach.Controllers
         // GET: Sach
         public ActionResult Index()
         {
-            //làm theo cách bình thường
-            //List<BANGSACH> dsSach = sach.BANGSACHes.ToList();
-            //lấy cả tên loại sách và nhà xuất bản
+
             List<BANGSACH> dsSachs = sach.BANGSACHes.Include(s => s.LOAISACH).Include(s => s.NHAXUATBAN).ToList();
-                return View(dsSachs);
+            return View(dsSachs);
         }
         public ActionResult ChiTietSach(int masach)
         {

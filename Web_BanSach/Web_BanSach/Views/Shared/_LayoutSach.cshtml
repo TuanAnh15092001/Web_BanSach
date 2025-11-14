@@ -25,24 +25,77 @@
 
             </div>
             @*Menu*@
-            <ul class=" flex items-center gap-x-8 lg:flex">
-                <li class="relative">
-                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","Sach")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
-                        <!--[-->
-                        Trang chủ
-                        <!--[-->
-                    </a>
+        <ul class=" flex items-center gap-x-8 lg:flex">
+            <li class="relative">
+                <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","Sach")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                    <!--[-->
+                    Trang chủ
+                    <!--[-->
+                </a>
 
-                </li>
-                <li class="relative">
-                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
-                        <!--[-->
-                        Liên Hệ
-                        <!--[-->
-                    </a>
+            </li>
+            <li class="relative">
+                <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                    <!--[-->
+                    Liên Hệ
+                    <!--[-->
+                </a>
 
-                </li>
+            </li>
+        <li class="dropdown">
+            <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="#" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                <!--[-->
+                Edit
+                <!--[-->
+            </a>
+
+            <ul class="dropdown-menu ">
+                <li><a href="@Url.Action("Index","LoaiSach")">Thể loại</a></li>
+                <li><a href="@Url.Action("Index","NhaXuatBan")">Nhà xuất bản</a></li>
+                <li><a href="@Url.Action("Index","SachEdit")">Sách</a></li>
             </ul>
+        </li>
+            <style>
+                /* item cha */
+                .dropdown {
+                    position: relative;
+                    list-style: none;
+                }
+
+                /* menu con */
+                .dropdown-menu {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #0f172a;
+                    padding: 8px 0;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    width: 160px;
+                    display: none; /* ẨN mặc định */
+                }
+
+                    .dropdown-menu li {
+                        list-style: none;
+                    }
+
+                    .dropdown-menu a {
+                        display: block;
+                        padding: 8px 16px;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                        .dropdown-menu a:hover {
+                            background: #007bff;
+                        }
+
+                /* Hover mở menu */
+                .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+            </style>
+
+        </ul>
             @*mennu đăng nhập*@
             <div class="flex items-center justify-end lg\:flex-1 gap-1\.5 ">
                 <div class=" lg:flex items-center gap-1\.5">
