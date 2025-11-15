@@ -179,6 +179,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DanhMucController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LienHeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoaiSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\NhaXuatBanController.cs" />
     <Compile Include="Areas\Admin\Controllers\SachController.cs" />
@@ -269,6 +270,7 @@
     <Content Include="Areas\Admin\Views\SachEdit\ViewEdit.cshtml" />
     <Content Include="Areas\Admin\Views\Sach\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Sach\ChiTietSach.cshtml" />
+    <Content Include="Areas\Admin\Views\LienHe\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />

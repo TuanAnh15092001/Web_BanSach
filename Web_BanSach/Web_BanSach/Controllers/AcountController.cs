@@ -49,7 +49,19 @@ namespace Web_BanSach.Controllers
                 }
                 else
                 {
-                    return Redirect(duongdan);
+                    // URL chuẩn của trang Register
+                    string registerUrl = Url.Action("Register", "Account");
+                    // Kiểm tra nếu đường dẫn cũ là trang đăng ký
+                    if (!string.IsNullOrEmpty(duongdan) && string.Equals(duongdan, registerUrl, StringComparison.OrdinalIgnoreCase))
+                    {
+                        // Nếu đường dẫn cũ là đăng ký thì redirect về Index sách
+                        return RedirectToAction("Index", "Sach");
+                    }
+                    else
+                    {
+                        // Ngược lại vẫn redirect về đường dẫn cũ
+                        return Redirect(duongdan);
+                    }
                 }    
             }
 
@@ -105,7 +117,7 @@ namespace Web_BanSach.Controllers
         {
             Session.Clear();
             FormsAuthentication.SignOut();
-            return RedirectToAction("Index", "Sach");
+            return RedirectToAction("Index", "Sach", new { area = "" });
             //có thể dùng cách dưới
             //return Redirect("/");
         }

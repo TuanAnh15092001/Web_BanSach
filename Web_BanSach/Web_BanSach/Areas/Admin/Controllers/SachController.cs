@@ -18,7 +18,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
             var query = sach.BANGSACHes
                             .Include(s => s.LOAISACH)
                             .Include(s => s.NHAXUATBAN)
-                            .OrderByDescending(s => s.MASACH);
+                            .OrderBy(s => s.MASACH);
 
             // Tổng số sách
             int totalItems = query.Count();
@@ -38,6 +38,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
 
         public ActionResult ChiTietSach(int masach)
         {
+
             var sachs = sach.BANGSACHes.FirstOrDefault(s => s.MASACH == masach);
 
             //View sách liên quan
@@ -45,7 +46,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
 
             if (lienquan == null || !lienquan.Any())
             {
-                ViewBag.Message = "Không có sách cùng loại.";
+                ViewBag.Messagelq = "Không có sách cùng loại.";
             }
             ViewBag.LQ = lienquan;
 
@@ -54,7 +55,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
 
             if (nxb == null || !nxb.Any())
             {
-                ViewBag.Message = "Không có bản thảo chung của nhà xuất bản.";
+                ViewBag.Messagenxb = "Không có bản thảo chung của nhà xuất bản.";
             }
             ViewBag.NXB = nxb;
             return View(sachs);
@@ -69,6 +70,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
         /// <returns></returns>
         public ActionResult LocSP(int id, int type)
         {
+            // Kiểm tra đăng nhập
             List<BANGSACH> loc = new List<BANGSACH>();
 
             if (type == 1) loc = sach.BANGSACHes.Where(i => i.MALOAI == id).ToList();
@@ -78,6 +80,7 @@ namespace Web_BanSach.Areas.Admin.Controllers
 
         public ActionResult TimKiemSPNangCao(string kw, int? chude, string[] gia)
         {
+            // Kiểm tra đăng nhập
             List<BANGSACH> lstsachs = new List<BANGSACH>();
             //Kiểm tra nếu chuỗi không null thì tìm theo từ khóa
             if (!String.IsNullOrEmpty(kw))

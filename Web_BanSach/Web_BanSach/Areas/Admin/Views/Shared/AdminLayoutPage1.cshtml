@@ -17,7 +17,7 @@
         <div class="flex items-center justify-between gap-3 h-[--header-height] mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             @*logo*@
             <div class="lg\:flex-1 flex items-center gap-1\.5 register-container">
-                <a aria-current="page" href="/" class="router-link-active router-link-exact-active flex items-end gap-2 font-bold text-xl text-gray-900 dark:text-white" aria-label="Nuxt UI">
+                <a aria-current="page" href="@Url.Action("Index", "Sach", new {area ="Admin"})" class="router-link-active router-link-exact-active flex items-end gap-2 font-bold text-xl text-gray-900 dark:text-white" aria-label="Nuxt UI">
                     <h1 class="flex items-center gap-2 w-auto h-auto" title="Thư viện sách online miễn phí">
                         <span class="text-base lg:text-lg font-bold">Story<span style="color:#00ff21">Book</span></span>
                     </h1>
@@ -27,7 +27,7 @@
             @*Menu*@
             <ul class=" flex items-center gap-x-8 lg:flex">
                 <li class="relative">
-                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item" href="@Url.Action("Index","Sach")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item" href="@Url.Action("Index", "Sach", new {area ="Admin"})" as="button" type="button" exact="false" exactquery="false" exacthash="false">
                         <!--[-->
                         Trang chủ
                         <!--[-->
@@ -35,7 +35,7 @@
 
                 </li>
                 <li class="relative">
-                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item" href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item" href="@Url.Action("Index","LienHe",new {area ="Admin"})" as="button" type="button" exact="false" exactquery="false" exacthash="false">
                         <!--[-->
                         Liên Hệ
                         <!--[-->
@@ -104,7 +104,7 @@
                     @if (Session["TEN"] != null)
                     {
                         <span class="btn" style="color:#36eb21">Xin chào, @Session["TEN"]</span>
-                        <a style="color:aliceblue" href="@Url.Action("DangXuat", "Acount")" class="btn-login">Đăng xuất</a>
+                        <a style="color:aliceblue" href="@Url.Action("DangXuat", "Acount",new { area = "" })" class="btn-login">Đăng xuất</a>
                     }
                     else
                     {

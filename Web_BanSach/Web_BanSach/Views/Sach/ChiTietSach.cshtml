@@ -31,7 +31,7 @@
                     <button class="btn btn-success btn-lg px-4">
                         <i class="bi bi-cart-plus"></i> Thêm vào giỏ
                     </button>
-                    <a href="#" class="btn btn-outline-secondary btn-lg px-4 ms-2">
+                    <a href="@Url.Action("Index","Sach")" class="btn btn-outline-secondary btn-lg px-4 ms-2">
                         <i class="bi bi-arrow-left"></i> Quay lại
                     </a>
                 </div>
@@ -42,9 +42,9 @@
         <div class="related-products mt-5">
             <h4 class="mb-4 text-light">Sản phẩm liên quan</h4>
 
-            @if (ViewBag.Message != null)
+            @if (ViewBag.Messagelq != null)
             {
-                <div class="alert alert-info">@ViewBag.Message</div>
+                <div class="alert alert-info">@ViewBag.Messagelq</div>
             }
             <div class="row g-4">
                 @foreach (var item in lienquan)
@@ -83,9 +83,9 @@
         <div class="related-products mt-5">
             <h4 class="mb-4 text-light">Cùng nhà xuất bản</h4>
 
-            @if (ViewBag.Message != null)
+            @if (ViewBag.Messagenxb != null)
             {
-                <div class="alert alert-info">@ViewBag.Message</div>
+                <div class="alert alert-info">@ViewBag.Messagenxb</div>
             }
             <div class="row g-4">
                 @foreach (var item in nxb)
