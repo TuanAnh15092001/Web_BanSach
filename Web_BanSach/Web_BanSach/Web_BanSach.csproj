@@ -177,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DanhMucController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoaiSachController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NhaXuatBanController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SachController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SachEditController.cs" />
     <Compile Include="BANGSACH.cs">
       <DependentUpon>QL_Sach.tt</DependentUpon>
     </Compile>
@@ -186,10 +192,7 @@
     <Compile Include="Controllers\AcountController.cs" />
     <Compile Include="Controllers\DanhMucController.cs" />
     <Compile Include="Controllers\LienHeController.cs" />
-    <Compile Include="Controllers\LoaiSachController.cs" />
-    <Compile Include="Controllers\NhaXuatBanController.cs" />
     <Compile Include="Controllers\SachController.cs" />
-    <Compile Include="Controllers\SachEditController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +256,19 @@
     <Content Include="Content\Bootstrap\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\Bootstrap\bootstrap-grid.min.css.map" />
     <Content Include="Content\Bootstrap\bootstrap-grid.css.map" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\AdminLayoutPage1.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBan\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBan\ThemNXB.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBan\ViewDelete.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBan\ViewEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\SachEdit\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SachEdit\ThemSach.cshtml" />
+    <Content Include="Areas\Admin\Views\SachEdit\ViewDelete.cshtml" />
+    <Content Include="Areas\Admin\Views\SachEdit\ViewEdit.cshtml" />
+    <Content Include="Areas\Admin\Views\Sach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sach\ChiTietSach.cshtml" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
@@ -263,7 +279,7 @@
     <Content Include="Views\Shared\_LayoutSach.cshtml" />
     <Content Include="Views\Sach\Index.cshtml" />
     <Content Include="Views\LienHe\Index.cshtml" />
-    <Content Include="Views\DanhMuc\_DanhMuc.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMuc\_DanhMuc.cshtml" />
     <Content Include="Views\TimKiem\TimkiemView.cshtml" />
     <EntityDeploy Include="QL_Sach.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -274,21 +290,18 @@
     </Content>
     <Content Include="Views\Acount\Login.cshtml" />
     <Content Include="Views\Sach\ChiTietSach.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMuc\_DanhMucTL.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMuc\_DanhMucNXB.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMuc\_DanhMucTimKiem.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSach\ThemLoai.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSach\ViewDelete.cshtml" />
+    <Content Include="Areas\Admin\Views\LoaiSach\ViewEdit.cshtml" />
+    <Content Include="Views\Acount\Register.cshtml" />
     <Content Include="Views\DanhMuc\_DanhMucTL.cshtml" />
-    <Content Include="Views\DanhMuc\_DanhMucNXB.cshtml" />
     <Content Include="Views\DanhMuc\_DanhMucTimKiem.cshtml" />
-    <Content Include="Views\LOAISACH\Index.cshtml" />
-    <Content Include="Views\LOAISACH\ThemLoai.cshtml" />
-    <Content Include="Views\LOAISACH\ViewDelete.cshtml" />
-    <Content Include="Views\LOAISACH\ViewEdit.cshtml" />
-    <Content Include="Views\NhaXuatBan\Index.cshtml" />
-    <Content Include="Views\NhaXuatBan\ThemNXB.cshtml" />
-    <Content Include="Views\NhaXuatBan\ViewDelete.cshtml" />
-    <Content Include="Views\NhaXuatBan\ViewEdit.cshtml" />
-    <Content Include="Views\SachEdit\Index.cshtml" />
-    <Content Include="Views\SachEdit\ThemSach.cshtml" />
-    <Content Include="Views\SachEdit\ViewDelete.cshtml" />
-    <Content Include="Views\SachEdit\ViewEdit.cshtml" />
+    <Content Include="Views\DanhMuc\_DanhMucNXB.cshtml" />
+    <Content Include="Views\DanhMuc\_DanhMuc.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -298,6 +311,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Views\ChinhSua\" />
     <Folder Include="Views\DangNhap\" />
     <Folder Include="Views\Login\" />

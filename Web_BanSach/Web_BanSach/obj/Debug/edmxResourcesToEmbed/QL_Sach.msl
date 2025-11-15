@@ -62,6 +62,7 @@
     <EntitySetMapping Name="NHANVIENs">
       <EntityTypeMapping TypeName="QL_SACHModel.NHANVIEN">
         <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
           <ScalarProperty Name="MANHANVIEN" ColumnName="MANHANVIEN" />
           <ScalarProperty Name="TENNHANVIEN" ColumnName="TENNHANVIEN" />
           <ScalarProperty Name="MATKHAU" ColumnName="MATKHAU" />

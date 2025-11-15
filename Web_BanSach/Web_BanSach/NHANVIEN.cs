@@ -23,6 +23,7 @@ namespace Web_BanSach
         public string TENNHANVIEN { get; set; }
         public string MATKHAU { get; set; }
         public Nullable<int> MAVAITRO { get; set; }
+        public string EMAIL { get; set; }
     
         public virtual ICollection<HOADON> HOADONs { get; set; }
         public virtual VAITRO VAITRO { get; set; }

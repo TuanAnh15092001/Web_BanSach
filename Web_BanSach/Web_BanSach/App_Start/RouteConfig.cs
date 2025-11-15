@@ -16,7 +16,8 @@ namespace Web_BanSach
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Sach", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Sach", action = "Index", id = UrlParameter.Optional },
+                namespaces: new[] { "Web_BanSach.Controllers" }   // chỉ controller root
             );
         }
     }

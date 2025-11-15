@@ -19,26 +19,88 @@ namespace Web_BanSach.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult XuLyFormDN(FormCollection f, string duongdan)
         {
-            //khai báo 2 biến
             string email = f["email"];
             string pass = f["password"];
 
-            // xử lý tìm kiếm
+            // Kiểm tra khách hàng
             var kh = ql.KHACHHANGs.FirstOrDefault(k => k.EMAIL == email && k.MATKHAU == pass);
             if (kh != null)
             {
                 FormsAuthentication.SetAuthCookie(kh.TENKHACHHANG, true);
-                Session["TENKHACHHANG"] = kh.TENKHACHHANG;
-                Session["MAKHACHHANG"] = kh.MAKHACHHANG;
-                // return về đường dẫn mà lúc nãy ấn vào, ví dụ: ấn vào view chi tiết, khi ấn đăng nhập vào lại vẫn là viewChitiet
+                Session["TEN"] = kh.TENKHACHHANG;
+                Session["LOAI_TK"] = "KHACHHANG";
+                Session["MA"] = kh.MAKHACHHANG;
                 return Redirect(duongdan);
+            }
 
-            }
-            else
+            // Kiểm tra nhân viên
+            var nv = ql.NHANVIENs.FirstOrDefault(n => n.EMAIL == email && n.MATKHAU == pass);
+            if (nv != null)
             {
-                return View("Index");
+                FormsAuthentication.SetAuthCookie(nv.TENNHANVIEN, true);
+                Session["TEN"] = nv.TENNHANVIEN;
+                Session["LOAI_TK"] = "NHANVIEN";
+                Session["MA"] = nv.MANHANVIEN;
+                Session["VAITRO"] = nv.MAVAITRO; // lưu vai trò vào session
+                if (nv.MAVAITRO == 1) // Admin
+                {
+                    // Redirect vào Area Admin, controller Index
+                    return RedirectToAction("Index", "Sach", new { area = "Admin" });
+                }
+                else
+                {
+                    return Redirect(duongdan);
+                }    
             }
+
+            // Sai thông tin
+            ViewBag.Loi = "Email hoặc mật khẩu không đúng";
+            return View("Login");
         }
+
+        // GET: Hiển thị form đăng ký
+        public ActionResult Register()
+        {
+            ViewBag.Url = !String.IsNullOrEmpty(Request.UrlReferrer.ToString()) ? Request.UrlReferrer.ToString() : "/";
+            return View();
+        }
+
+        // POST: Xử lý form đăng ký
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Register(FormCollection f)
+        {
+            string ten = f["TENKHACHHANG"];
+            string pass = f["MATKHAU"];
+            string sdt = f["SDT"];
+            string email = f["EMAIL"];
+            string diachi = f["DIACHI"];
+
+            // Kiểm tra email đã tồn tại chưa
+            var check = ql.KHACHHANGs.FirstOrDefault(k => k.EMAIL == email);
+            if (check != null)
+            {
+                ViewBag.Loi = "Email này đã được sử dụng!";
+                return View();
+            }
+
+            // Tạo đối tượng khách hàng mới
+            KHACHHANG kh = new KHACHHANG();
+            kh.TENKHACHHANG = ten;
+            kh.EMAIL = email;
+            kh.MATKHAU = pass;
+            kh.SDT = sdt;
+            kh.DIACHI = diachi;
+
+            ql.KHACHHANGs.Add(kh);
+            ql.SaveChanges();
+
+            ViewBag.ThongBao = "Đăng ký thành công! Bạn có thể đăng nhập ngay.";
+            return RedirectToAction("Login");
+        }
+
+
+
         public ActionResult DangXuat()
         {
             Session.Clear();
@@ -51,6 +113,7 @@ namespace Web_BanSach.Controllers
         // GET: Acount
 
         //////////
+
 
 
     }

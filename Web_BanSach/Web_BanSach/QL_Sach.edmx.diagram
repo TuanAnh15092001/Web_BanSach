@@ -10,7 +10,7 @@
         <EntityTypeShape EntityType="QL_SACHModel.HOADON" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_SACHModel.KHACHHANG" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_SACHModel.LOAISACH" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_SACHModel.NHANVIEN" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_SACHModel.NHANVIEN" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_SACHModel.NHAXUATBAN" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_SACHModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_SACHModel.TINHTRANG" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />

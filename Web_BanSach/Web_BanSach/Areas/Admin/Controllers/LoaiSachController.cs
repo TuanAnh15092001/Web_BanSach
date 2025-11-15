@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Web_BanSach.Controllers
+namespace Web_BanSach.Areas.Admin.Controllers
 {
-    //thêm xoá sửa loại sách
     public class LoaiSachController : Controller
     {
+        // GET: Admin/LoaiSach
         QL_SACHEntities loai = new QL_SACHEntities();
         // GET: LoaiSach
         public ActionResult Index()

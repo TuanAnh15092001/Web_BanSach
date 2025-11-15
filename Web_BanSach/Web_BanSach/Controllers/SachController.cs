@@ -11,12 +11,30 @@ namespace Web_BanSach.Controllers
     {
         QL_SACHEntities sach = new QL_SACHEntities();
         // GET: Sach
-        public ActionResult Index()
+        public ActionResult Index(int page = 1, int pageSize = 10)
         {
+            // Lấy toàn bộ danh sách nhưng chưa ToList() vội để Linq xử lý Skip/Take
+            var query = sach.BANGSACHes
+                            .Include(s => s.LOAISACH)
+                            .Include(s => s.NHAXUATBAN)
+                            .OrderByDescending(s => s.MASACH);
 
-            List<BANGSACH> dsSachs = sach.BANGSACHes.Include(s => s.LOAISACH).Include(s => s.NHAXUATBAN).ToList();
+            // Tổng số sách
+            int totalItems = query.Count();
+
+            // Lấy danh sách theo trang
+            var dsSachs = query
+                            .Skip((page - 1) * pageSize)
+                            .Take(pageSize)
+                            .ToList();
+
+            // Gửi tổng số trang + trang hiện tại qua ViewBag
+            ViewBag.TotalPages = Math.Ceiling((double)totalItems / pageSize);
+            ViewBag.Page = page;
+
             return View(dsSachs);
         }
+
         public ActionResult ChiTietSach(int masach)
         {
             var sachs = sach.BANGSACHes.FirstOrDefault(s => s.MASACH == masach);

@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Web;
 using System.Web.Mvc;
-using Web_BanSach;
 using Web_BanSach.Models;
 
-namespace Web_BanSach.Controllers
+namespace Web_BanSach.Areas.Admin.Controllers
 {
     public class SachEditController : Controller
     {
+        // GET: Admin/SachEdit
         QL_SACHEntities sach = new QL_SACHEntities();
-       
+
         // GET: SachEdit
         public ActionResult Index()
         {
@@ -131,5 +130,3 @@ namespace Web_BanSach.Controllers
 
     }
 }
-
-

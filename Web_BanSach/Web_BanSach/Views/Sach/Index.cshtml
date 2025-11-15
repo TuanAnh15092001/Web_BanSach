@@ -30,7 +30,43 @@
         }
         <!-- Thêm các card khác tương tự -->
     </div>
+    <div class="pagination">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <a href="@Url.Action("Index", new { page = i })"
+               class="@(i == ViewBag.Page ? "active-page" : "")">
+                @i
+            </a>
+        }
+    </div>
 </section>
+
+
+
+<style>
+    .pagination {
+        width: 100%; /* chiếm hết chiều ngang */
+        display: flex;
+        justify-content: center; /* căn giữa ngang */
+        align-items: center; /* căn giữa dọc nếu cần */
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+        .pagination a {
+            color: white;
+            padding: 8px 12px;
+            border: 1px solid aquamarine;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+            .pagination a.active-page {
+                background-color: aquamarine;
+                color: #0f172a;
+                font-weight: bold;
+            }
+</style>
 
 
 

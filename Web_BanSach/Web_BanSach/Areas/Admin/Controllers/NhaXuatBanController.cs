@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Web_BanSach.Controllers
+namespace Web_BanSach.Areas.Admin.Controllers
 {
     public class NhaXuatBanController : Controller
     {
+        // GET: Admin/NhaXuatBan
         QL_SACHEntities nxb = new QL_SACHEntities();
 
         // GET: NhaXuatBan

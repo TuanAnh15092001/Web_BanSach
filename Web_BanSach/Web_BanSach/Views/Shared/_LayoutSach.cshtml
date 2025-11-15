@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>📚 Thư viện sách</title>
     <link href="~/Content/Bootstrap/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/bootstrap.js"></script>
     <link href="~/Content/Css/Style.css" rel="stylesheet" />
@@ -25,99 +25,45 @@
 
             </div>
             @*Menu*@
-        <ul class=" flex items-center gap-x-8 lg:flex">
-            <li class="relative">
-                <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","Sach")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
-                    <!--[-->
-                    Trang chủ
-                    <!--[-->
-                </a>
+            <ul class=" flex items-center gap-x-8 lg:flex">
+                <li class="relative">
+                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","Sach")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                        <!--[-->
+                        Trang chủ
+                        <!--[-->
+                    </a>
 
-            </li>
-            <li class="relative">
-                <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
-                    <!--[-->
-                    Liên Hệ
-                    <!--[-->
-                </a>
+                </li>
+                <li class="relative">
+                    <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="@Url.Action("Index","LienHe")" as="button" type="button" exact="false" exactquery="false" exacthash="false">
+                        <!--[-->
+                        Liên Hệ
+                        <!--[-->
+                    </a>
 
-            </li>
-        <li class="dropdown">
-            <a class="text-sm\/6 font-semibold flex items-center gap-1 menu-item " href="#" as="button" type="button" exact="false" exactquery="false" exacthash="false">
-                <!--[-->
-                Edit
-                <!--[-->
-            </a>
-
-            <ul class="dropdown-menu ">
-                <li><a href="@Url.Action("Index","LoaiSach")">Thể loại</a></li>
-                <li><a href="@Url.Action("Index","NhaXuatBan")">Nhà xuất bản</a></li>
-                <li><a href="@Url.Action("Index","SachEdit")">Sách</a></li>
+                </li>
             </ul>
-        </li>
-            <style>
-                /* item cha */
-                .dropdown {
-                    position: relative;
-                    list-style: none;
-                }
-
-                /* menu con */
-                .dropdown-menu {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    background-color: #0f172a;
-                    padding: 8px 0;
-                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                    width: 160px;
-                    display: none; /* ẨN mặc định */
-                }
-
-                    .dropdown-menu li {
-                        list-style: none;
-                    }
-
-                    .dropdown-menu a {
-                        display: block;
-                        padding: 8px 16px;
-                        color: white;
-                        text-decoration: none;
-                    }
-
-                        .dropdown-menu a:hover {
-                            background: #007bff;
-                        }
-
-                /* Hover mở menu */
-                .dropdown:hover .dropdown-menu {
-                    display: block;
-                }
-            </style>
-
-        </ul>
             @*mennu đăng nhập*@
             <div class="flex items-center justify-end lg\:flex-1 gap-1\.5 ">
                 <div class=" lg:flex items-center gap-1\.5">
                     <button class="srch-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    @*Nếu có tên khách hàng thì hiện thị nút đăng xuất và tên khách hàng*@
-                    @if (Session["TENKHACHHANG"] != null)
+                    @if (Session["TEN"] != null)
                     {
-                        <span class="btn" style="color:green">xin chào, @Session["TENKHACHHANG"]</span>
+                        <span class="btn" style="color:#36eb21">Xin chào, @Session["TEN"]</span>
                         <a style="color:aliceblue" href="@Url.Action("DangXuat", "Acount")" class="btn-login">Đăng xuất</a>
                     }
                     else
                     {
-                        <a href="@Url.Action("Login","Acount")" style="background-color:darkblue" class="btn-login">Đăng Nhập</a>
-                        <a href="@Url.Action("Login","Acount")" class="btn-login">Đăng Ký</a>
+                        <a href="@Url.Action("Login","Acount")" style="background-color:darkblue" class="btn-login"> Đăng nhập</a>
+                        <a href="@Url.Action("Register","Acount")" class="btn-login">Đăng ký</a>
                     }
                 </div>
             </div>
-        </div>
+            </div>
     </header>
     <Main > 
         <div class="content-wrapper">
-            @Html.Action("_DanhMuc", "DanhMuc")
+            @Html.Action("_DanhMuc", "DanhMuc", new { area = "" })
             @RenderBody()
         </div>
     </Main>
